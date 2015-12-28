@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+  PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+  "http://java.sun.com/j2ee/dtds/web-app_2.2.dtd">
+
+<web-app>
+
+  <!-- Template Tag Library Descriptor -->
+  <taglib>
+    <taglib-uri>/WEB-INF/tlds/template.tld</taglib-uri>
+    <taglib-location>/WEB-INF/tlds/template.tld</taglib-location>
+  </taglib>
+
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>com.servlet.project.MainServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Authorization</servlet-name>
+    <servlet-class>com.servlet.project.Authorization</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Crossing</servlet-name>
+    <servlet-class>com.servlet.project.Crossing</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>com.servlet.project.Registration</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Exit</servlet-name>
+    <servlet-class>com.servlet.project.Exit</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Model</servlet-name>
+    <servlet-class>com.servlet.project.Model</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Car</servlet-name>
+    <servlet-class>com.servlet.project.Car</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Authorization</servlet-name>
+    <url-pattern>/authorization</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Crossing</servlet-name>
+    <url-pattern>/regis</url-pattern>
+    <url-pattern>/auth</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/registration</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Exit</servlet-name>
+    <url-pattern>/exit</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Model</servlet-name>
+    <url-pattern>/models</url-pattern>
+    <url-pattern>/model/delete</url-pattern>
+    <url-pattern>/model</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Car</servlet-name>
+    <url-pattern>/cars</url-pattern>
+    <url-pattern>/car/delete</url-pattern>
+    <url-pattern>/car</url-pattern>
+  </servlet-mapping>
+
+</web-app>

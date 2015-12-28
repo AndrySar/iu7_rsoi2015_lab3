@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="postgresql_driver">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../postgresql_driver" />
+      <root url="file://$PROJECT_DIR$/../../jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../jar" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../postgresql_driver" recursive="false" />
+  </library>
+</component>
